@@ -1,0 +1,136 @@
+/* ====== RESET + NORMALIZE (MODERN) ====== */
+
+/* 1. Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Убираем отступы у всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Убираем встроенные стили у текста */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* 5. Удаляем стили списков */
+ul[role="list"],
+ol[role="list"],
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 6. Ссылки без подчеркивания */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 7. Изображения — адаптивно */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 8. Наследуем шрифт для форм */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* 9. Убираем фокус-обводку в браузерах, где это нужно */
+button,
+input,
+select,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* 10. Формы */
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* 11. HTML5 семантика */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+/* 12. Загрузка шрифта (если надо) */
+@font-face {
+    font-family: "NEXT ART";
+    src: url("/assets/fonts/nextart/NEXT\ ART_Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* ====== END RESET ====== */
+
+.ss-main .ss-single-selected {
+    background-color: transparent;
+    color: #fdfdfd;
+    border-radius: 8px;
+    border: 1px solid #e1e3e4;
+    height: 52px;
+    padding: 0 16px;
+}
+
+.ss-content {
+    border-radius: 0 0 8px 8px;
+    background-color: #465b4b;
+    border: transparent;
+}
+.ss-content .ss-list .ss-option.ss-disabled {
+    background-color: #1a3e3e;
+}
+.ss-content .ss-search {
+    display: none;
+}
+
+.ss-content .ss-list .ss-option:hover {
+    background-color: #1a3e3e;
+}
+
+.ss-main .ss-single-selected .ss-arrow span {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+
+.ss-content .ss-list .ss-option {
+    color: #fdfdfd;
+}
